@@ -1,0 +1,247 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Promo 2025 "TUPANANCHISKAMA"</title>
+
+  <script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.5/dist/mindar-image-aframe.prod.js"></script>
+
+  <style>
+    html, body {
+      margin: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      font-family: Arial, sans-serif;
+    }
+
+    #startOverlay {
+      position: fixed;
+      inset: 0;
+      background: #000;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      z-index: 9999;
+    }
+
+    #startOverlay h1 {
+      font-size: 32px;
+      margin: 0;
+      letter-spacing: 2px;
+    }
+
+    #startOverlay h2 {
+      margin: 10px 0 30px;
+      font-size: 20px;
+      font-weight: normal;
+    }
+
+    #startBtn {
+      padding: 14px 32px;
+      font-size: 18px;
+      border-radius: 30px;
+      border: none;
+      background: #fff;
+      color: #000;
+      cursor: pointer;
+    }
+
+    #footerBrand {
+      position: absolute;
+      bottom: 25px;
+      font-size: 12px;
+      opacity: 0.8;
+      line-height: 1.4;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- ================= PANTALLA INICIAL ================= -->
+<div id="startOverlay">
+  <h1>PROMO 2025</h1>
+  <h2>“TUPANANCHISKAMA”</h2>
+
+  <button id="startBtn">▶ Iniciar</button>
+
+  <div id="footerBrand">
+    PRODUCCIONES RUIZ<br>
+    Fotografía & Video
+  </div>
+</div>
+
+<a-scene
+  mindar-image="imageTargetSrc: targets.mind; filterMinCF: 0.0001; filterBeta: 0.001; warmupTolerance: 3; missTolerance: 5;"
+  vr-mode-ui="enabled: false"
+  device-orientation-permission-ui="enabled: false"
+>
+
+  <a-assets>
+    <!-- ================= VIDEOS ================= -->
+    <!-- ALUMNOS 01 - 25 -->
+    <video id="video01" src="videos/alumno01.mp4" loop playsinline></video>
+    <video id="video02" src="videos/alumno02.mp4" loop playsinline></video>
+    <video id="video03" src="videos/alumno03.mp4" loop playsinline></video>
+    <video id="video04" src="videos/alumno04.mp4" loop playsinline></video>
+    <video id="video05" src="videos/alumno05.mp4" loop playsinline></video>
+    <video id="video06" src="videos/alumno06.mp4" loop playsinline></video>
+    <video id="video07" src="videos/alumno07.mp4" loop playsinline></video>
+    <video id="video08" src="videos/alumno08.mp4" loop playsinline></video>
+    <video id="video09" src="videos/alumno09.mp4" loop playsinline></video>
+    <video id="video10" src="videos/alumno10.mp4" loop playsinline></video>
+    <video id="video11" src="videos/alumno11.mp4" loop playsinline></video>
+    <video id="video12" src="videos/alumno12.mp4" loop playsinline></video>
+    <video id="video13" src="videos/alumno13.mp4" loop playsinline></video>
+    <video id="video14" src="videos/alumno14.mp4" loop playsinline></video>
+    
+    <!-- ESPECIALES -->
+    <video id="videoProfesor" src="videos/profesor.mp4" loop playsinline></video>
+    <video id="videoGrupal01" src="videos/grupal01.mp4" loop playsinline></video>
+   
+
+    <!-- ================= AUDIOS ================= -->
+    <audio id="audio01" src="audios/alumno01.mp3"></audio>
+    <audio id="audio02" src="audios/alumno02.mp3"></audio>
+    <audio id="audio03" src="audios/alumno03.mp3"></audio>
+    <audio id="audio04" src="audios/alumno04.mp3"></audio>
+    <audio id="audio05" src="audios/alumno05.mp3"></audio>
+    <audio id="audio06" src="audios/alumno06.mp3"></audio>
+    <audio id="audio07" src="audios/alumno07.mp3"></audio>
+    <audio id="audio08" src="audios/alumno08.mp3"></audio>
+    <audio id="audio09" src="audios/alumno09.mp3"></audio>
+    <audio id="audio10" src="audios/alumno10.mp3"></audio>
+    <audio id="audio11" src="audios/alumno11.mp3"></audio>
+    <audio id="audio12" src="audios/alumno12.mp3"></audio>
+    <audio id="audio13" src="audios/alumno13.mp3"></audio>
+    <audio id="audio14" src="audios/alumno14.mp3"></audio>
+    
+    <audio id="audioProfesor" src="audios/profesor.mp3"></audio>
+    <audio id="audioGrupal01" src="audios/grupal01.mp3"></audio>
+    
+  </a-assets>
+
+  <!-- ================= BLOQUES DE TARGET ================= -->
+
+  <!-- ALUMNO 01 -->
+  <a-entity mindar-image-target="targetIndex: 0" data-video="video01" data-audio="audio01">
+    <a-video src="#video01" width="1" height="1.54" material="shader: flat"></a-video>
+  </a-entity>
+
+  <!-- ALUMNO 02 -->
+  <a-entity mindar-image-target="targetIndex: 1" data-video="video02" data-audio="audio02">
+    <a-video src="#video02" width="1" height="1.54" material="shader: flat"></a-video>
+  </a-entity>
+
+  <!-- ALUMNO 03 -->
+  <a-entity mindar-image-target="targetIndex: 2" data-video="video03" data-audio="audio03">
+    <a-video src="#video03" width="1" height="1.54" material="shader: flat"></a-video>
+  </a-entity>
+
+  <!-- ALUMNO 04 -->
+  <a-entity mindar-image-target="targetIndex: 3" data-video="video04" data-audio="audio04">
+    <a-video src="#video04" width="1" height="1.54" material="shader: flat"></a-video>
+  </a-entity>
+
+  <!-- ALUMNO 05 -->
+  <a-entity mindar-image-target="targetIndex: 4" data-video="video05" data-audio="audio05">
+    <a-video src="#video05" width="1" height="1.54" material="shader: flat"></a-video>
+  </a-entity>
+
+  <!-- ALUMNO 06 -->
+  <a-entity mindar-image-target="targetIndex: 5" data-video="video06" data-audio="audio06">
+    <a-video src="#video06" width="1" height="1.54" material="shader: flat"></a-video>
+  </a-entity>
+
+  <!-- ALUMNO 07 -->
+  <a-entity mindar-image-target="targetIndex: 6" data-video="video07" data-audio="audio07">
+    <a-video src="#video07" width="1" height="1.54" material="shader: flat"></a-video>
+  </a-entity>
+
+  <!-- ALUMNO 08 -->
+  <a-entity mindar-image-target="targetIndex: 7" data-video="video08" data-audio="audio08">
+    <a-video src="#video08" width="1" height="1.54" material="shader: flat"></a-video>
+  </a-entity>
+
+  <!-- ALUMNO 09 -->
+  <a-entity mindar-image-target="targetIndex: 8" data-video="video09" data-audio="audio09">
+    <a-video src="#video09" width="1" height="1.54" material="shader: flat"></a-video>
+  </a-entity>
+
+  <!-- ALUMNO 10 -->
+  <a-entity mindar-image-target="targetIndex: 9" data-video="video10" data-audio="audio10">
+    <a-video src="#video10" width="1" height="1.54" material="shader: flat"></a-video>
+  </a-entity>
+
+  <!-- ALUMNO 11 -->
+  <a-entity mindar-image-target="targetIndex: 10" data-video="video11" data-audio="audio11">
+    <a-video src="#video11" width="1" height="1.54" material="shader: flat"></a-video>
+  </a-entity>
+
+  <!-- ALUMNO 12 -->
+  <a-entity mindar-image-target="targetIndex: 11" data-video="video12" data-audio="audio12">
+    <a-video src="#video12" width="1" height="1.54" material="shader: flat"></a-video>
+  </a-entity>
+
+  <!-- ALUMNO 13 -->
+  <a-entity mindar-image-target="targetIndex: 12" data-video="video13" data-audio="audio13">
+    <a-video src="#video13" width="1" height="1.54" material="shader: flat"></a-video>
+  </a-entity>
+
+  <!-- ALUMNO 14 -->
+  <a-entity mindar-image-target="targetIndex: 13" data-video="video14" data-audio="audio14">
+    <a-video src="#video14" width="1" height="1.54" material="shader: flat"></a-video>
+  </a-entity>
+
+  <!-- PROFESOR -->
+  <a-entity mindar-image-target="targetIndex: 14" data-video="videoProfesor" data-audio="audioProfesor">
+    <a-video src="#videoProfesor" width="1" height="1.47" material="shader: flat"></a-video>
+  </a-entity> 
+
+  <!-- GRUPAL01 -->
+  <a-entity mindar-image-target="targetIndex: 15" data-video="videoGrupal01" data-audio="audioGrupal01">
+    <a-video src="#videoGrupal01" width="1" height="0.56" material="shader: flat"></a-video>
+  </a-entity> 
+
+  <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
+</a-scene>
+
+<script>
+  const overlay = document.getElementById('startOverlay');
+  const startBtn = document.getElementById('startBtn');
+
+  let audioUnlocked = false;
+
+  startBtn.addEventListener('click', () => {
+    audioUnlocked = true;
+    overlay.style.display = 'none';
+  });
+
+  document.querySelectorAll('[mindar-image-target]').forEach(target => {
+    const video = document.getElementById(target.dataset.video);
+    const audio = document.getElementById(target.dataset.audio);
+
+    target.addEventListener('targetFound', () => {
+      if (!audioUnlocked) return;
+      video.play().catch(() => {});
+      audio.currentTime = 0;
+      //audio.play().catch(() => {}); fuerza la reproduccion del audio, si el video tiene audio también puede sonar un eco
+    });
+
+    target.addEventListener('targetLost', () => {
+      video.pause();
+      video.currentTime = 0;
+      audio.pause();
+      audio.currentTime = 0;
+    });
+  });
+</script>
+
+</body>
+</html>
